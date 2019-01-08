@@ -1,4 +1,4 @@
-# 科学上网：ubuntu16服务器上搭建shadowSocks服务
+﻿# 科学上网：ubuntu16服务器上搭建shadowSocks服务
 ## 前言
 <p>科学上网应该时必备技能，但是一些免费的方案如goagent等实在是不太稳定。购买自己的服务器，然后自己搭建梯子不失为一种较好的方案。在ubuntu服务器上搭建使用shadowsocks搭建自己的科学上网工具<br>shadowsocks由于政策的原因，在百度是搜索不到的。<p>
 ## shasowsocks服务器安装
@@ -26,8 +26,8 @@ sudo ssserver -p 8388 -k password -m rc4-md5 -d start
 
 ```json
 {
-	"server":"my_server_ip",
-	"server_port":8388,
+	"server":"0.0.0.0",
+	"server_port":443,
 	"local_address":"127.0.0.1",
 	"local_port":1080,
 	"password":"mypassword",
